@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RodBez - One Way Taxi Service in Bihar</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="logo-container">
+                <a href="index.html" class="logo">
+                    <span>Rod</span><span class="highlight">Bez</span>
+                </a>
+            </div>
+            <div class="tagline">
+                <div class="slider">
+                    <div class="slide-icon">
+                        <i class="fas fa-car"></i>
+                    </div>
+                    <div class="slide-text">Revolution is on the way</div>
+                </div>
+            </div>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="index.html" class="active">Home</a></li>
+                    <li><a href="#team">Team</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="mobile-menu-toggle">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="hero-section">
+            <div class="container">
+                <div class="hero-content">
+                    <h1 class="hero-heading">
+                        Gaon ki Galiyon se<br>
+                        <span class="highlight-box">Patna ki Sadakon tak</span>
+                    </h1>
+                    <p class="hero-text">We find cheap and safe one way taxi for you, now service is available from all
+                        villages and cities of Bihar to Patna or from Patna to every village and city of Bihar</p>
+                </div>
+                <div class="hero-image">
+                    <img src="https://www.rodbez.in/web_assets/images/bnr.jpg" alt="RodBez Taxi Fleet"
+                        class="fleet-image">
+                </div>
+            </div>
+        </section>
+
+        <!-- Booking Section -->
+        <section class="booking-section">
+            <div class="container">
+                <div class="booking-form">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <div class="input-with-icon">
+                                <i class="fas fa-circle location-dot pickup"></i>
+                                <input type="text" id="pickup-location" placeholder="Enter Pickup Location">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="input-with-icon">
+                                <i class="fas fa-circle location-dot dropoff"></i>
+                                <input type="text" id="drop-location" placeholder="Please enter drop location">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <div class="input-with-icon">
+                                <i class="fas fa-phone"></i>
+                                <input type="tel" id="phone-number" placeholder="Enter your mobile (IND Mobile)">
+                            </div>
+                        </div>
+                        <div class="form-group button-group">
+                            <button id="estimate-fare" class="btn primary-btn">
+                                GET ESTIMATED FARE
+                                <i class="fas fa-arrow-right"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Services Section -->
+        <section id="services" class="services-section">
+            <div class="container">
+                <div class="section-heading">
+                    <h2>Our Services</h2>
+                </div>
+                <div class="service-tabs">
+                    <div class="tab active" data-tab="one-way">
+                        <span class="tab-icon">🚕</span>
+                        <span class="tab-text">One Way Taxi</span>
+                    </div>
+                    <div class="tab" data-tab="taxi-pool">
+                        <span class="tab-icon">👥</span>
+                        <span class="tab-text">TaxiPool</span>
+                    </div>
+                </div>
+                <div class="service-content">
+                    <div class="tab-content active" id="one-way-content">
+                        <div class="service-info">
+                            <div class="service-image">
+                                <img src="https://www.rodbez.in/web_assets/images/gaonkigalionse.jpeg"
+                                    alt="Family in taxi" class="family-image">
+                            </div>
+                            <div class="service-text">
+                                <h3>Book One Way Taxi save up to 40%</h3>
+                                <p>Every day lakhs of passengers in Bihar travel one way from one city to another or
+                                    from villages to cities. We provide affordable and safe one-way taxi services across
+                                    Bihar.</p>
+                                <p class="tagline">पैसा हो बचाना तो RodBez ही बुलाना</p>
+                                <a href="#book-now" class="btn secondary-btn">Book Now</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-content" id="taxi-pool-content">
+                        <div class="service-info">
+                            <div class="service-image">
+                                <img src="https://www.rodbez.in/web_assets/images/ads-img.jpeg"
+                                    alt="Shared taxi service" class="shared-taxi-image">
+                            </div>
+                            <div class="service-text">
+                                <h3>Share Your Ride, Save More</h3>
+                                <p>Our TaxiPool service lets you share your ride with others going in the same
+                                    direction. Save up to 60% on your travel costs while reducing carbon footprint.</p>
+                                <p class="tagline">साझा सफर, किफायती किराया</p>
+                                <a href="#book-pool" class="btn secondary-btn">Book TaxiPool</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Features Section -->
+        <section class="features-section">
+            <div class="container">
+                <div class="section-heading">
+                    <h2>Why Choose RodBez?</h2>
+                </div>
+                <div class="features-grid">
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-rupee-sign"></i>
+                        </div>
+                        <h3>Affordable Pricing</h3>
+                        <p>One-way fares that save you up to 40% compared to round-trip charges</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-shield-alt"></i>
+                        </div>
+                        <h3>Safe Rides</h3>
+                        <p>Verified drivers and real-time trip tracking for your safety</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-map-marked-alt"></i>
+                        </div>
+                        <h3>Widespread Network</h3>
+                        <p>Connecting all villages and cities across Bihar</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-clock"></i>
+                        </div>
+                        <h3>24/7 Service</h3>
+                        <p>Book anytime and travel when you need</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Team Section -->
+        <section id="team" class="team-section">
+            <div class="container">
+                <div class="section-heading">
+                    <h2>Our Energetic Team</h2>
+                </div>
+                <div class="team-grid">
+                    <!-- Row 1 -->
+                    <div class="team-member">
+                        <div class="member-image">
+                            <img src="https://www.rodbez.in/web_assets/news/dk.png" alt="Dilkhush Kumar"
+                                class="rounded-image">
+                        </div>
+                        <h3>Dilkhush Kumar</h3>
+                        <p>Co-Founder & CEO</p>
+                        <div class="social-links">
+                            <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                            <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                            <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                        </div>
+                    </div>
+                    <div class="team-member">
+                        <div class="member-image">
+                            <img src="https://www.rodbez.in/web_assets/news/sid.jpeg" alt="Siddharth Shankar Jha"
+                                class="rounded-image">
+                        </div>
+                        <h3>Siddharth Shankar Jha</h3>
+                        <p>Co-Founder & CFO</p>
+                        <div class="social-links">
+                            <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                            <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                            <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                        </div>
+                    </div>
+                    <div class="team-member">
+                        <div class="member-image">
+                            <img src="https://www.rodbez.in/web_assets/news/nr.png" alt="Nirbhay Jha"
+                                class="rounded-image">
+                        </div>
+                        <h3>Nirbhay Jha</h3>
+                        <p>CTO & Product Head</p>
+                        <div class="social-links">
+                            <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                            <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                            <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                        </div>
+                    </div>
+                    <!-- Row 2 (and so on for other team members) -->
+                </div>
+            </div>
+        </section>
+
+        <!-- App Download Section -->
+        <section class="app-section">
+            <div class="container">
+                <div class="app-content">
+                    <div class="app-text">
+                        <h2>Download Our Mobile App</h2>
+                        <p>Book rides, track your taxi, and manage your trips easily with our mobile app. Available for
+                            Android and iOS.</p>
+                        <div class="app-buttons">
+                            <a href="https://play.google.com/store/apps/details?id=com.Rodbez&hl=en_IN" target="_blank"
+                                class="app-button">
+                                <img src="https://www.rodbez.in/web_assets/images/pstore.jpeg" alt="Google Play Store"
+                                    class="app-store-badge">
+                            </a>
+                            <a href="https://apps.apple.com/in/app/rodbez/id6468667176" target="_blank"
+                                class="app-button">
+                                <img src="https://www.rodbez.in/web_assets/images/astore.jpeg" alt="Apple App Store"
+                                    class="app-store-badge">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="app-image">
+                        <img src="https://www.rodbez.in/web_assets/images/ontimeairport.jpeg" alt="RodBez Mobile App"
+                            class="mobile-app-image">
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-top">
+                <div class="footer-logo">
+                    <a href="index.html" class="logo">
+                        <span>Rod</span><span class="highlight">Bez</span>
+                    </a>
+                </div>
+                <div class="footer-social">
+                    <a href="" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                    <a href="" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                    <a href="" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+
+            <div class="footer-content">
+                <div class="footer-column">
+                    <h3>CONTACT US</h3>
+                    <p>We welcome your valuable suggestions.</p>
+                    <div class="contact-info">
+                        <div class="contact-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <div>
+                                <strong>Corporate Office:</strong>
+                                <p>Nutan Tower, Balley Road, Near Shinde Showroom Saguna More, Patna-801503</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-phone-alt"></i>
+                            <div>
+                                <p>Call: +91 9155394055</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <div>
+                                <p>Email: info@rodbez.in</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="footer-column">
+                    <h3>REGISTERED OFFICE</h3>
+                    <div class="contact-info">
+                        <div class="contact-item">
+                            <i class="fas fa-building"></i>
+                            <div>
+                                <p>Rudra Mobility India Pvt. Ltd.</p>
+                                <p>C/O Pawan Khan,</p>
+                                <p>A-21, Bangaon,</p>
+                                <p>Tola: Baliyahi Bazar,</p>
+                                <p>Patna-Bangaon East,</p>
+                                <p>Anga, Sarkanda, Bihar</p>
+                                <p>PIN-852201</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-phone-alt"></i>
+                            <div>
+                                <p>Call: +91 9155394055</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <div>
+                                <p>Email: info@rodbez.in</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="footer-column">
+                    <h3>QUICK LINKS</h3>
+                    <ul class="footer-links">
+                        <li><a href="#about">About Us</a></li>
+                        <li><a href="#services">Our Services</a></li>
+                        <li><a href="#faq">FAQs</a></li>
+                        <li><a href="#team">Our Team</a></li>
+                        <li><a href="#careers">Careers</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <div class="footer-legal">
+                    <a href="#privacy-policy">Privacy Policy</a>
+                    <span class="separator">|</span>
+                    <a href="#terms">Terms & Conditions</a>
+                </div>
+                <div class="copyright">
+                    <p>&copy; 2025 Rudra Mobility India Pvt. Ltd. All Rights Reserved.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="whatsapp-button">
+            <a href="https://wa.me/919155394055" target="_blank" rel="noopener noreferrer"
+                aria-label="Contact on WhatsApp">
+                <i class="fab fa-whatsapp"></i>
+            </a>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
